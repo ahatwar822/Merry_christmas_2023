@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Josh Fenando">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas!</title>
+    <!-- === Favicon === -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <!-- === CSS File === -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- === Remix Icon === -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        /* Add this CSS for the snow effect */
+        .snowflake {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+            pointer-events: none;
+            animation: snowfall linear infinite;
+        }
+
+        @keyframes snowfall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "b2a10f51-11b5-41d6-a660-5b0592da71f0", // The ID of this integration.
+          region: "eu-gb", // The region your integration is hosted in.
+          serviceInstanceID: "72a7a99e-087d-44dd-87f9-5759ceffe5b7", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    <!-- === Header ===  -->
+    <header id="header">
+        <nav class="container">
+            <a href="#" id="logo"> <img src="./assets/images/logo.png">`Christmas 2023!</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul id="nav-list">
+                    <li class="nav-item">
+                        <a href="#start" class="nav-link active-link"></a>
+                    </li>
+                </li>
+                <li class="nav-item">
+                    <a href="#actions" class="nav-link"></a>
+                </li>
+                    <li class="nav-item">
+                        <a href="#meaning" class="nav-link">Team</a>
+                    
+                    <li class="nav-item">
+                        <a href="#celebrate" class="nav-link">Gift</a>
+                    </li>
+                </ul>
+                <!-- === Responsive Header ===  -->
+                <div id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+                <img id="nav-img-1" src="./assets/images/snow-img.png">
+                <img id="nav-img-2" src="./assets/images/snow-img.png">
+            </div>            
+            <div id="nav-toggle">
+                <i class="ri-apps-2-line"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- === Start Section ===  -->
+        <section id="start">
+            <h1 id="start-title">Merry Christmas ADIT!</h1>
+            <img id="start-moon" class="parallax" data-rellax-speed="-15" src="./assets/images/start-moon.png">
+            <img id="start-trineo" class="parallax" data-rellax-speed="-2" src="./assets/images/start-trineo-santa.png">
+            <img id="start-mountain-3" class="parallax" data-rellax-speed="-8" src="./assets/images/start-mountain-3.png">
+            <img id="start-mountain-2" class="parallax" data-rellax-speed="-8" src="./assets/images/start-mountain-2.png">
+            <img id="start-pine" class="parallax" data-rellax-speed="-10" src="./assets/images/start-pine-tree.png">
+            <img id="start-village" class="parallax" data-rellax-speed="-10" src="./assets/images/start-village.png">
+            <img id="start-snow" src="./assets/images/start-snow.png">
+            <img id="start-mountain-1" src="./assets/images/start-mountain-1.png">
+        </section>
+
+        <div class="container grid"> 
+            <h2 id="Wishing" style="text-align: center; font-family: var(--secondary-font); font-size: var(--h1-font-size);
+            ">🎄🎄 Warm Wishes form OUR-TEAM 🎉</h2>
+        </div>
+        <!-- === Meaning Section ===  -->
+        <section id="meaning">
+            <div id="meaning-container" class="container grid">
+                <div id="meaning-data">
+                    <div>
+                        <h2 class="section-title">AMAN HATWAR</h2>
+                        <p id="meaning-description">-Web Devloper(Team_Leader/Owner)</p>
+                    </div>
+                    <p id="meaning-description">
+                        "Wishing you a Merry Christmas filled with joy, love, and peace. May the New Year bring prosperity and happiness to you and your loved ones. Cheers to a wonderful holiday season from our team!"
+                        <br>    
+                    </p>
+                </div>
+                <div id="gola">
+                    <img id="meaning-image" src="./assets/images/Aman.jpg">
+                </div>
+                <img id="meaning-snow-1" src="./assets/images/snow-img.png">
+                <img id="meaning-snow-2" src="./assets/images/snow-img.png">
+            </div>
+
+            <div id="actions-container" class="container grid">
+                <!-- === Card 1 ===  -->
+                <div class="actions-card">
+                    <div id="gola1">
+                        <img class="actions-image" src="./assets/images/gaffer1.jpg">
+                    </div>
+                    
+                    <p class="actions-description">
+                        <strong>MD GAFFER</strong><br> front-end Devloper
+                    </p>
+                </div>
+                <!-- === Card 2 ===  -->
+                <div class="actions-card">
+                    <div id="gola1">
+                        <img class="actions-image" src="./assets/images/rajiv.png">
+                    </div>
+                    <p class="actions-description">
+                        <strong>RAJIV KUMAR</strong> <br> Team Manager
+                    </p>
+                </div>
+                <!-- === Card 3 ===  -->
+                <div class="actions-card">
+                    <div id="gola1">
+                        <img class="actions-image" src="./assets/images/Anurag1.jpeg">
+                    </div>
+                    <p class="actions-description">
+                        <strong>ANURAG KUMAR</strong> <br> BackEnd Devloper
+                    </p>
+                </div>
+                <img id="actions-snow-1" src="./assets/images/snow-img.png">
+                <!-- <img id="actions-snow-2" src="./assets/images/snow-img.png"> -->
+                <img id="actions-snow-3" src="./assets/images/snow-img.png">
+            </div>
+    
+        </section>
+        
+        <!-- === Actions Section ===  -->
+        <section id="actions">
+            <h2 class="section-title">"Special Wishes to our IBM-ADTI Trainees"</h2>
+            <div id="actions-container" class="container grid">
+                <!-- === Card 1 ===  -->
+                <div class="actions-card">
+                    <img class="actions-image" src="./assets/images/dharmendra.png">
+                    <p class="actions-description">
+                        <strong>Dharmendra kumar</strong> <br> Python Devloper
+                    </p>
+                </div>
+                <!-- === Card 2 ===  -->
+                <div class="actions-card">
+                    <img class="actions-image" src="./assets/images/ramesh.png">
+                    <p class="actions-description">
+                        <strong>Rmesh kumar</strong> <br> BackEnd Devloper                   
+                     </p>
+                </div>
+                <!-- === Card 3 ===  -->
+                <div class="actions-card">
+                    <img class="actions-image" src="./assets/images/Rakesh.png">
+                    <p class="actions-description">
+                        <strong>Rakesh Kumar</strong> <br> Front-End Devloper                 
+                    </p>
+                </div>
+                <!-- === Card 4 ===  -->
+                <div class="actions-card">
+                    <img class="actions-image" src="./assets/images/priyanka.jpeg">
+                    <p class="actions-description">
+                        <strong>Priyanka Gupta</strong> <br> ADIT Trinee                 
+                    </p>
+                </div>
+                <!-- === Card 5 ===  -->
+                <div class="actions-card">
+                    <img class="actions-image" src="./assets/images/Amit.png">
+                    <p class="actions-description">
+                        <strong>Amit Kumar</strong> <br> IBM Intern
+                    </p>
+                </div>
+                <!-- === Card 6 ===  -->
+                <div class="actions-card">
+                    <img class="actions-image" src="./assets/images/roushan.png">
+                    <p class="actions-description">
+                        <strong>Roushan Kumar</strong> <br> Cloud Devloper
+                    </p>
+                </div>
+                
+                <img id="actions-snow-1" src="./assets/images/snow-img.png">
+                <img id="actions-snow-2" src="./assets/images/snow-img.png">
+                <img id="actions-snow-3" src="./assets/images/snow-img.png">
+                <img id="actions-snow-1" src="./assets/images/snow-img.png">
+                <img id="actions-snow-2" src="./assets/images/snow-img.png">
+                <img id="actions-snow-3" src="./assets/images/snow-img.png">
+            </div>
+        </section>
+
+        <!-- === Celebrate Section ===  -->
+        <section id="celebrate">
+            <div id="celebrate-container" class="container grid">
+                <div id="celebrate-data">
+                    <h2 class="section-title">🎁GIFT!</h2>
+                    <p id="celebrate-description">
+                        The main celebration of Christmas is the birth 
+                        of Jesus Christ. So, celebrate this moment with joy! 
+                    </p>
+                    <p>"A surprise gift from Santa"</p><br>
+                    <button type="button" class="btn btn-success">
+                        <a href="https://joshfernando.github.io/christmas-gift-mom-/"> Open Your Gift 🎁</a>
+                    </button>
+
+                </div>
+                <img id="celebrate-image" src="./assets/images/celebarte-church.png">
+                <img id="celebrate-snow-1" src="./assets/images/snow-img.png">
+                <img id="celebrate-snow-2" src="./assets/images/snow-img.png">
+            </div>
+        </section>
+    </main>
+        
+    <!-- === Footer ===  -->
+    <footer>
+        <div id="footer-container" class="container">
+            <a id="footer-logo" href="#">Christmas 2023</a>
+            <ul id="footer-social">
+                <li>
+                    <a class="footer-link" href="https://www.linkedin.com/in/aman-hatwar/" target="_blank"> <i class="ri-linkedin-fill"></i> </a>
+                </li>
+            </ul>
+            <span id="footer-copy">Made by # HATWAR AMAN</span>
+            <img id="footer-snow-1" src="./assets/images/snow-img.png">
+            <img id="footer-snow-2" src="./assets/images/snow-img.png">
+        </div>
+    </footer>
+    <!-- === Scroll Up === -->
+    <a class="scroll-up" id="scroll-up" href="#"> <i class="ri-arrow-up-line"></i> </a>
+
+    <!-- === Rellax JS === -->
+    <script src="./assets/js/rellax.min.js"></script>
+    <!-- === GSAP === -->
+    <script src="./assets/js/gsap.min.js"></script>
+    <!-- === ScrollReveal === -->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+
+    <!-- === JS File === -->
+    <script src="./assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const snowflakesContainer = document.getElementById('snowflakes-container');
+
+            for (let i = 0; i < 30; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                snowflake.style.left = Math.random() * window.innerWidth + 'px';
+                snowflake.style.animationDuration = 2 + Math.random() * 3 + 's';
+                snowflake.style.animationDelay = Math.random() + 's';
+                snowflakesContainer.appendChild(snowflake);
+            }
+        });
+    </script>
+</body>
+</html>
